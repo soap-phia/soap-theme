@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>theme renderer</title>
+        <script type="module">
+            import createTable from './render.js';
+            async function init() {
+				const theme = await createTable(document.getElementById('table'),'./theme.json'); 
+            }
+            init();
+        </script>
+		<style>
+			table, body {
+				margin: 0;
+				width: 100%;
+				height: 100vh;
+				text-align: center;
+				border: 0;
+				outline: 0;
+			}
+			td, th {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 3%;
+			}
+			.key {
+				position: relative;
+				top: 7px;
+				background-color: white;
+				border-radius: 0 0 5px 5px;
+				width: 10%;
+				margin: 0;
+			}
+		</style>
+    </head>
+    <body>
+        <table id="table"></table>
+    </body>
+</html>
