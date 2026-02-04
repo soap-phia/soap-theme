@@ -1,0 +1,30 @@
+[
+    {
+        "Rosewater": "#f5e0dc",
+        "Flamingo": "#f2cdcd",
+        "Pink": "#f5c2e7",
+        "Mauve": "#cba6f7",
+        "Red": "#f38ba8",
+        "Maroon": "#eba0ac",
+        "Peach": "#df7d0b",
+        "Yellow": "#f9e2af",
+        "Green": "#a6e3a1",
+        "Teal": "#94e2d5",
+        "Sky": "#89dceb",
+        "Sapphire": "#74c7ec",
+        "Blue": "#89b4fa",
+        "Lavender": "#b4befe",
+        "Text": "#f2d5cf",
+        "Subtext 1": "#e1bcaf",
+        "Subtext 0": "#d0a391",
+        "Overlay 2": "#ad8473",
+        "Overlay 1": "#916d5e",
+        "Overlay 0": "#75574a",
+        "Surface 2": "#5e453b",
+        "Surface 1": "#4a362e",
+        "Surface 0": "#3b2b25",
+        "Base": "#2a1e19",
+        "Mantle": "#211814",
+        "Crust": "#1b1410"
+    }
+]
