@@ -1,0 +1,205 @@
+{
+  "name": "soap",
+  "description": "Discord, but it's soap pink.",
+  "authors": [
+    {
+      "name": "soap phia",
+      "id": "0"
+    }
+  ],
+  "semanticColors": {
+    "BACKGROUND_ACCENT": [
+      "#4f3252"
+    ],
+    "BACKGROUND_MESSAGE_HOVER": [
+      "rgba(28, 18, 30, 0.3)"
+    ],
+    "BACKGROUND_MOBILE_PRIMARY": [
+      "#2c1c2e"
+    ],
+    "BACKGROUND_MOBILE_SECONDARY": [
+      "#231625"
+    ],
+    "BACKGROUND_SECONDARY_ALT": [
+      "#291a2b"
+    ],
+    "BACKGROUND_MODIFIER_ACCENT": [
+      "#291a2b"
+    ],
+    "BACKGROUND_MODIFIER_ACTIVE": [
+      "rgba(253, 232, 255, 0.17)"
+    ],
+    "BACKGROUND_MODIFIER_HOVER": [
+      "rgba(196, 126, 201, 0.15)"
+    ],
+    "BACKGROUND_MODIFIER_SELECTED": [
+      "rgba(127, 81, 130, 0.2)"
+    ],
+    "BACKGROUND_PRIMARY": [
+      "#2c1c2e"
+    ],
+    "BACKGROUND_SECONDARY": [
+      "#231625"
+    ],
+    "BACKGROUND_TERTIARY": [
+      "#1c121e"
+    ],
+    "CHANNEL_ICON": [
+      "#ea86f3"
+    ],
+    "CHANNELS_DEFAULT": [
+      "#ea86f3"
+    ],
+    "CHAT_BACKGROUND": [
+      "#2c1c2e"
+    ],
+    "HEADER_PRIMARY": [
+      "#fde8ff"
+    ],
+    "HEADER_SECONDARY": [
+      "#f8c2fb"
+    ],
+    "HOME_BACKGROUND": [
+      "#2c1c2e"
+    ],
+    "INTERACTIVE_ACTIVE": [
+      "#fde8ff"
+    ],
+    "INTERACTIVE_HOVER": [
+      "rgba(196, 126, 201, 0.15)"
+    ],
+    "INTERACTIVE_MUTED": [
+      "#7f5182"
+    ],
+    "INTERACTIVE_NORMAL": [
+      "#fde8ff"
+    ],
+    "REDESIGN_ACTIVITY_CARD_BACKGROUND": [
+      "#291a2b"
+    ],
+    "SPOILER_HIDDEN_BACKGROUND": [
+      "#633f66"
+    ],
+    "TEXT_DANGER": [
+      "#f38fad"
+    ],
+    "TEXT_LINK": [
+      "#95a9f5"
+    ],
+    "TEXT_MUTED": [
+      "#ee9df5"
+    ],
+    "TEXT_NORMAL": [
+      "#fde8ff"
+    ],
+    "CARD_PRIMARY_BG": [
+      "#1c121e"
+    ],
+    "CARD_SECONDARY_BG": [
+      "#3d2740"
+    ]
+  },
+  "rawColors": {
+    "BRAND_260": "#ebaaee",
+    "BRAND_360": "#ebaaee",
+    "BRAND_500": "#ebaaee",
+    "GREEN_100": "#ace6b4",
+    "GREEN_130": "#ace6b4",
+    "GREEN_160": "#ace6b4",
+    "GREEN_200": "#ace6b4",
+    "GREEN_230": "#ace6b4",
+    "GREEN_260": "#ace6b4",
+    "GREEN_300": "#ace6b4",
+    "GREEN_330": "#ace6b4",
+    "GREEN_345": "#ace6b4",
+    "GREEN_360": "#ace6b4",
+    "GREEN_400": "#ace6b4",
+    "GREEN_430": "#ace6b4",
+    "GREEN_460": "#ace6b4",
+    "GREEN_500": "#ace6b4",
+    "GREEN_530": "#ace6b4",
+    "GREEN_560": "#ace6b4",
+    "GREEN_600": "#ace6b4",
+    "GREEN_630": "#ace6b4",
+    "GREEN_660": "#ace6b4",
+    "GREEN_700": "#ace6b4",
+    "GREEN_730": "#ace6b4",
+    "GREEN_760": "#ace6b4",
+    "GREEN_800": "#ace6b4",
+    "GREEN_830": "#ace6b4",
+    "GREEN_860": "#ace6b4",
+    "GREEN_900": "#ace6b4",
+    "GUILD_BOOSTING_PINK": "#ebaaee",
+    "GUILD_BOOSTING_PURPLE": "#d698e6",
+    "GUILD_BOOSTING_PURPLE_FOR_GRADIENTS": "#d698e6",
+    "PRIMARY_100": "#fde8ff",
+    "PRIMARY_300": "#f8c2fb",
+    "PRIMARY_360": "#ee9df5",
+    "PRIMARY_400": "#f8c2fb",
+    "PRIMARY_460": "#2c1c2e",
+    "PRIMARY_500": "#ee9df5",
+    "PRIMARY_600": "#3d2740",
+    "PRIMARY_630": "#3d2740",
+    "PRIMARY_660": "#291a2b",
+    "PRIMARY_700": "#4f3252",
+    "PRIMARY_800": "#1c121e",
+    "RED_260": "#f38fad",
+    "RED_300": "#f38fad",
+    "RED_330": "#f38fad",
+    "RED_345": "#f38fad",
+    "RED_360": "#f38fad",
+    "RED_400": "#f38fad",
+    "RED_430": "#ee618b",
+    "RED_460": "#ec4a7a",
+    "RED_500": "#ec4a7a",
+    "RED_530": "#ec4a7a",
+    "RED_560": "#ec4a7a",
+    "RED_600": "#ec4a7a",
+    "RED_630": "#ec4a7a",
+    "RED_660": "#ec4a7a",
+    "RED_700": "#ec4a7a",
+    "YELLOW_100": "#f9dca1",
+    "YELLOW_130": "#f9dca1",
+    "YELLOW_160": "#f9dca1",
+    "YELLOW_200": "#f9dca1",
+    "YELLOW_230": "#f9dca1",
+    "YELLOW_260": "#f9dca1",
+    "YELLOW_300": "#f9dca1",
+    "YELLOW_330": "#f9dca1",
+    "YELLOW_345": "#f9dca1",
+    "YELLOW_360": "#f9dca1",
+    "YELLOW_400": "#f9dca1",
+    "YELLOW_430": "#f9dca1",
+    "YELLOW_460": "#f9dca1",
+    "YELLOW_500": "#f9dca1",
+    "YELLOW_530": "#f9dca1",
+    "YELLOW_560": "#f9dca1",
+    "YELLOW_600": "#f9dca1",
+    "YELLOW_630": "#f9dca1",
+    "YELLOW_660": "#f9dca1",
+    "YELLOW_700": "#f9dca1",
+    "YELLOW_730": "#f9dca1",
+    "YELLOW_760": "#f9dca1",
+    "YELLOW_800": "#f9dca1",
+    "YELLOW_830": "#f9dca1",
+    "YELLOW_860": "#f9dca1",
+    "YELLOW_900": "#f9dca1",
+    "WHITE_500": "#fde8ff"
+  },
+  "plus": {
+    "version": "0",
+    "unreadBadgeColor": "#ebaaee",
+    "mentionLineColor": "#f9dca1",
+    "iconpack": "md3",
+    "icons": {
+      "ic_new_pins": "#f38fad",
+      "StatusStreaming": "#d698e6",
+      "StatusMobileOnline": "#ace6b4",
+      "StatusIdle": "#f9dca1",
+      "StatusDND": "#f38fad",
+      "StatusOffline": "#7f5182",
+      "StatusOnline": "#ace6b4"
+    }
+  },
+  "spec": 2
+}
