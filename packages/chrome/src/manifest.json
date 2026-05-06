@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "soap theme",
+  "description": "soap theme, but for chrome",
+  "version": "1.0.0",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "theme": {
+    "colors": {
+      "frame": "{{crust}}",
+      "frame_inactive": "{{crust}}",
+      "frame_incognito": "{{surface1}}",
+      "frame_incognito_inactive": "{{surface1}}",
+      "bookmark_text": "{{text}}",
+      "tab_background_text": "{{subtext1}}",
+      "tab_background_text_inactive": "{{subtext0}}",
+      "tab_background_text_incognito": "{{subtext1}}",
+      "tab_background_text_incognito_inactive": "{{subtext0}}",
+      "tab_text": "{{text}}",
+      "toolbar": "{{base}}",
+      "toolbar_button_icon": "{{pink}}",
+      "omnibox_text": "{{pink}}",
+      "omnibox_background": "{{crust}}",
+      "ntp_background": "{{base}}",
+      "ntp_link": "{{pink}}",
+      "ntp_text": "{{text}}",
+      "button_background": "{{crust}}"
+    }
+  }
+}

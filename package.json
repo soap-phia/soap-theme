@@ -1,0 +1,20 @@
+{
+  "name": "soap-theme-workspace",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "pack:discord": "mkdir -p dist ; cd packages/discord ; bun run pack ; cp *.css ../../dist",
+    "pack:vscode": "mkdir -p dist ; cd packages/vscode ; bun run pack ; cp *.vsix ../../dist",
+    "pack:chrome": "mkdir -p dist ; cd packages/chrome ; bun run pack ; cp *.zip ../../dist",
+    "pack": "bun run pack:discord && bun run pack:vscode && bun run pack:chrome"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

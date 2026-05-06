@@ -1,0 +1,33 @@
+{
+  "name": "soap-theme-vscode",
+  "displayName": "soap theme",
+  "description": "soap theme, but for vscode",
+  "publisher": "soap-phia",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soap-theme/soap-theme.git"
+  },
+  "icon": "./dist/icon.png",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.118.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "soap theme",
+        "uiTheme": "vs-dark",
+        "path": "./dist/theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.9.1"
+  },
+  "scripts": {
+    "pack": "bun ./build.ts"
+  }
+}

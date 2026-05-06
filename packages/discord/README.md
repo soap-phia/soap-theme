@@ -1,0 +1,1 @@
+This is HEAVILY based off of [catppuccin's discord theme](https://github.com/catppuccin/discord)

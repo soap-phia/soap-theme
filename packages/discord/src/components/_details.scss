@@ -1,0 +1,179 @@
+// online indicators (not var based)
+$online-indicators: (
+  #45a366: $green,
+  #ffc04e: $yellow,
+  #da3e44: $red,
+  #84858d: $overlay1,
+  #9147ff: var(--twitch),
+);
+@each $color, $var in $online-indicators {
+  svg [fill="#{$color}"],
+  svg[fill="#{$color}"] {
+    fill: #{$var};
+  }
+
+  div[style="background-color: rgb(#{red($color)}, #{green($color)}, #{blue($color)});"] {
+    background-color: #{$var} !important;
+  }
+}
+
+div[class^="newMessagesBar_"] {
+  --white: #{$crust};
+  --control-secondary-background-default: var(--brand-500);
+  --control-secondary-background-hover: var(--brand-530);
+}
+
+span[class^="folderGroupBackground_"] {
+  --background-mod-subtle: #{$mantle} !important;
+}
+
+// Switches
+label[class^="container_"] > div[data-mana-component="switch"] {
+  background-color: #{$surface2} !important;
+  border: unset !important;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #{$surface1} !important;
+  }
+
+  > svg > rect {
+    fill: var(--white);
+    transition: fill 0.2s;
+  }
+
+  &:has(+ span > input:checked) {
+    background-color: var(--brand-500) !important;
+
+    &:hover {
+      background-color: var(--brand-560) !important;
+    }
+
+    > svg > rect {
+      fill: #{$crust};
+    }
+  }
+}
+
+// Vencord custom switches
+div.vc-switch-container {
+  --primary-400: #{$surface2};
+
+  svg.vc-switch-slider > rect {
+    fill: var(--white);
+    transition: fill 0.2s;
+  }
+
+  &.vc-switch-checked > svg.vc-switch-slider > rect {
+    fill: #{$crust};
+  }
+}
+
+// system message icons
+div[class^="message_"][class*="isSystemMessage_"] div[class^="icon_"] {
+  // User Joined icon
+  &[style*="/assets/61ccab047dad737a.svg"] {
+    @include recolor($green);
+  }
+
+  // Missed call icon
+  &[style*="/assets/6f076a64de25de4b.svg"] {
+    @include recolor($subtext0);
+  }
+
+  // Left server/group icon
+  &[style*="/assets/53e42368b1409f1a.svg"] {
+    @include recolor($red);
+  }
+  // Joined server/group icon
+  &[style*="/assets/8b9de960da063cb9.svg"] {
+    @include recolor($green);
+  }
+}
+
+img[class*="maskIcon_"][src*="/assets/c8ae30e56eb87fdf.svg"] {
+  @include recolor($crust);
+}
+
+i[class^="check_"] {
+  @include recolor($pink);
+}
+
+// Quests page gradient
+div[class^="overlay_"][class*="darkThemeGradient_"] {
+  background: linear-gradient(
+    0deg,
+    #{$base} 0,
+    rgba($surface0, 0.5) 50%,
+    rgba($surface1, 0)
+  );
+}
+
+// Forum tags and gallery gradient
+div[class^="textContentFooter_"] {
+  background: linear-gradient(
+    0deg,
+    $base,
+    rgba($surface0, 0.97) 36px,
+    rgba($surface1, 0.4)
+  ) !important;
+  [class*="tagPill_"] {
+    background-color: #{rgba($surface1, 0.9)};
+  }
+}
+// Forum new badge / OP tag
+div[class^="newBadge_"][class*="textBadge_"][style="background-color: var(--brand-260);"],
+span[class*="botTagOP_"] {
+  background-color: var(--brand-500) !important;
+  color: var(--white);
+}
+
+div[class^="quickSelectPopoutOption_"]:hover[role="option"] {
+  background-color: var(--interactive-background-hover);
+}
+
+// VC controls
+[class*="greenGlow_"] {
+  background: #{adjust-color($green, $alpha: -0.9)};
+  &:hover {
+    background: #{adjust-color($green, $alpha: -0.8)};
+  }
+}
+[class*="redGlow_"] {
+  background: #{adjust-color($red, $alpha: -0.9)};
+  &:hover {
+    background: #{adjust-color($red, $alpha: -0.8)} !important;
+  }
+}
+button[class^="experimentButton_"][class*="buttonColor_"][class*="buttonActive_"] {
+  background-color: #{adjust-color($green, $alpha: -0.9)};
+  border: 1px solid #{adjust-color($green, $alpha: -0.9)};
+  &:hover {
+    background-color: #{adjust-color($green, $alpha: -0.8)};
+  }
+}
+
+// Universally style inline styles
+[style*="color: white"] {
+  color: var(--white) !important;
+}
+
+// Search bar and text input borders follow accent
+div[class*="container_"]:focus-within:has(> div[class^="inner_"] > input),
+[class*="input_"][type="text"]:not([readOnly]):focus,
+[class*="input_"][type="text"]:not([readOnly]):focus:hover {
+  --text-link: var(--brand-500);
+}
+
+// Toast icons
+div[class^="toast_"][data-type="success"] {
+  --status-positive: #{$base};
+}
+div[class^="toast_"][data-type="failure"] {
+  --icon-feedback-critical: #{$base};
+}
+
+// Delete button icon color
+div[class*="button_"][class*="dangerous_"] {
+  color: #{$red};
+}

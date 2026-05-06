@@ -1,0 +1,22 @@
+/**
+ * @name soap theme
+ * @author soap_phia
+ * @authorId 1012095822957133976
+ * @version 1.0.0
+ * @description soap theme, but for discord
+ * @website https://github.com/soap-phia/soap-theme
+**/
+
+@use "sass:math";
+@use "highlights";
+@import "soap";
+
+.visual-refresh.theme-dark,
+.visual-refresh .theme-dark {
+  $brand: $pink;
+
+  @import "components/tweaks/dark";
+  @import "theme";
+
+  @include highlights.highlights();
+}

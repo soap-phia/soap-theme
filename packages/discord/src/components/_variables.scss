@@ -1,0 +1,341 @@
+& {
+  --brand-100: #{lighten($pink, math.div(90%, 2))};
+  --brand-130: #{lighten($pink, math.div(85%, 2))};
+  --brand-160: #{lighten($pink, math.div(80%, 2))};
+  --brand-200: #{lighten($pink, math.div(75%, 2))};
+  --brand-230: #{lighten($pink, math.div(70%, 2))};
+  --brand-260: #{lighten($pink, math.div(65%, 2))};
+  --brand-300: #{lighten($pink, math.div(60%, 2))};
+  --brand-330: #{lighten($pink, math.div(50%, 2))};
+  --brand-360: #{lighten($pink, math.div(40%, 2))};
+  --brand-400: #{lighten($pink, math.div(30%, 2))};
+  --brand-430: #{lighten($pink, math.div(20%, 2))};
+  --brand-460: #{lighten($pink, math.div(10%, 2))};
+  --brand-500: #{$pink} !important;
+  --brand-530: #{darken($pink, math.div(10%, 2))};
+  --brand-560: #{darken($pink, math.div(20%, 2))};
+  --brand-600: #{darken($pink, math.div(30%, 2))};
+  --brand-630: #{darken($pink, math.div(40%, 2))};
+  --brand-660: #{darken($pink, math.div(50%, 2))};
+  --brand-700: #{darken($pink, math.div(60%, 2))};
+  --brand-730: #{darken($pink, math.div(65%, 2))};
+  --brand-760: #{darken($pink, math.div(70%, 2))};
+  --brand-800: #{darken($pink, math.div(75%, 2))};
+  --brand-830: #{darken($pink, math.div(80%, 2))};
+  --brand-860: #{darken($pink, math.div(85%, 2))};
+  --brand-900: #{darken($pink, math.div(90%, 2))};
+  // similar to other brand colors, except alpha only
+  --brand-05a: #{adjust-color($pink, $alpha: -0.95)};
+  --brand-10a: #{adjust-color($pink, $alpha: -0.9)};
+  --brand-15a: #{adjust-color($pink, $alpha: -0.85)};
+  --brand-20a: #{adjust-color($pink, $alpha: -0.8)};
+  --brand-25a: #{adjust-color($pink, $alpha: -0.75)};
+  --brand-30a: #{adjust-color($pink, $alpha: -0.7)};
+  --brand-35a: #{adjust-color($pink, $alpha: -0.65)};
+  --brand-40a: #{adjust-color($pink, $alpha: -0.6)};
+  --brand-45a: #{adjust-color($pink, $alpha: -0.55)};
+  --brand-50a: #{adjust-color($pink, $alpha: -0.5)};
+  --brand-55a: #{adjust-color($pink, $alpha: -0.45)};
+  --brand-60a: #{adjust-color($pink, $alpha: -0.4)};
+  --brand-65a: #{adjust-color($pink, $alpha: -0.35)};
+  --brand-70a: #{adjust-color($pink, $alpha: -0.3)};
+  --brand-75a: #{adjust-color($pink, $alpha: -0.25)};
+  --brand-80a: #{adjust-color($pink, $alpha: -0.2)};
+  --brand-85a: #{adjust-color($pink, $alpha: -0.15)};
+  --brand-90a: #{adjust-color($pink, $alpha: -0.1)};
+  --brand-95a: #{adjust-color($pink, $alpha: -0.05)};
+
+  --__header-bar-background: #{$mantle} !important;
+
+  --text-default: #{$text};
+  --text-muted: #{$subtext0} !important;
+  --text-link: #{$blue} !important;
+  --text-brand: #{$pink};
+  --text-strong: #{$text} !important;
+  --text-subtle: #{$subtext1};
+
+  --text-feedback-positive: #{$green};
+  --text-feedback-critical: #{$red};
+  --text-feedback-warning: #{$yellow};
+  --text-feedback-info: #{$blue};
+
+  --message-reacted-background-default: #{adjust-color($pink, $alpha: -0.7)} !important;
+  --message-reacted-text-default: #{$pink};
+
+  --opacity-blurple-8: #{adjust-color($pink, $alpha: -0.92)};
+  --opacity-blurple-16: #{adjust-color($pink, $alpha: -0.84)};
+  --opacity-blurple-24: #{adjust-color($pink, $alpha: -0.76)};
+  --opacity-blurple-32: #{adjust-color($pink, $alpha: -0.68)};
+  --opacity-blurple-60: #{adjust-color($pink, $alpha: -0.4)};
+  --blurple-50: #{$pink};
+  --blurple-60: #{darken($pink, math.div(20%, 2))};
+
+  // TODO: `2025_04_desktop_refresh_fast_follows` "Darker Guild List Background"
+  --app-frame-background: #{darken($crust, 2%)};
+
+  --background-secondary-alt: #{darken($base, 1%)} !important;
+  --background-accent: #{$surface1} !important;
+  --background-surface-highest: #{$surface0} !important;
+  --background-surface-higher: #{darken($surface0, 3%)} !important;
+  --background-surface-high: #{$base} !important;
+
+  --background-base-lowest: #{$crust} !important;
+  --background-base-lower: #{$mantle} !important;
+  --background-base-low: #{darken($base, 1%)} !important;
+  --bg-surface-raised: #{$mantle};
+  --background-gradient-highest: #{darken($base, 1%)};
+  --home-background: #{$base};
+
+  --chat-background: #{$base};
+  --chat-background-default: #{$base};
+  --chat-border: #{$crust};
+  --chat-text-muted: #{$subtext0};
+
+  --checkbox-icon-active: #{$crust};
+  --checkbox-border-default: #{$overlay0};
+
+  --radio-thumb-background-active: #{$crust};
+
+  --border-muted: #{$surface0};
+  --border-strong: #{$mantle};
+  --border-normal: #{$crust};
+  --border-subtle: #{$base} !important;
+  --background-mod-muted: #{adjust-color($surface2, $alpha: -0.95)};
+  --background-mod-normal: #{adjust-color($surface2, $alpha: -0.85)};
+  --background-mod-subtle: #{adjust-color($surface2, $alpha: -0.75)} !important;
+  --background-mod-strong: #{adjust-color($surface2, $alpha: -0.55)} !important;
+  --custom-channel-members-bg: #{$mantle};
+  --custom-status-bubble-background: #{$crust} !important;
+  --custom-status-bubble-background-color: #{$mantle} !important;
+  --card-background-default: #{$surface0} !important;
+
+  // --brand-500: #{$pink};
+  // --brand-560: #{darken($pink, math.div(20%, 2))};
+
+  --background-feedback-positive: #{adjust-color($green, $alpha: -0.85)};
+  --icon-feedback-positive: #{$green};
+
+  --background-feedback-warning: #{adjust-color($yellow, $alpha: -0.85)};
+  --icon-feedback-warning: #{$yellow};
+
+  --background-feedback-critical: #{adjust-color($red, $alpha: -0.85)};
+  --icon-feedback-critical: #{$red};
+
+  --background-feedback-info: #{adjust-color($sky, $alpha: -0.85)};
+  --icon-feedback-info: #{$sky};
+
+  --background-feedback-notification: #{$red};
+  --icon-feedback-notification: #{$red};
+  --badge-notification-background: #{$red};
+
+  --status-positive: #{$green};
+  --status-positive-background: #{$green};
+  --status-positive-text: #{$base};
+
+  --status-warning: #{$yellow};
+  --status-warning-background: #{$yellow};
+  --status-warning-text: #{$base};
+
+  --status-danger: #{$red};
+
+  // colorWarning
+  --black-500: #{$crust};
+
+  --green-360: #{$green};
+  --green-300: #{$green};
+  --yellow-360: #{$yellow};
+  --yellow-300: #{$yellow};
+  --red-400: #{$red};
+  --red-430: #{darken($red, 10%)};
+  --red-500: #{darken($red, 15%)};
+  --blue-500: #{darken($blue, 10%)};
+  --blue-530: #{darken($blue, 15%)};
+
+  --primary-100: #{$subtext1};
+  --primary-200: #{$subtext0};
+  --primary-300: #{$subtext1};
+  --primary-400: #{$subtext1};
+  --primary-630: #{$surface0};
+  --primary-700: #{$surface1};
+  --primary-800: #{$crust};
+
+  --white: #{$text};
+  --white-500: #{$text};
+
+  --guild-boosting-pink: #{$pink};
+  --guild-boosting-blue: #{$blue};
+  --guild-boosting-purple: #{$mauve};
+  --premium-perk-yellow: #{$yellow};
+  --premium-perk-purple: #{$mauve};
+  --premium-perk-dark-blue: #{darken($blue, math.div(20%, 2))};
+  --premium-perk-light-blue: #{lighten($blue, math.div(10%, 2))};
+  --premium-perk-blue: #{$blue};
+  --premium-perk-green: #{$green};
+  --premium-perk-pink: #{$pink};
+  --premium-perk-orange: #{$peach};
+
+  --premium-tier-0-blue: #{$blue};
+  --premium-tier-0-purple: #{$mauve};
+
+  --premium-tier-1-blue-for-gradients: #{$sapphire};
+  --premium-tier-1-dark-blue-for-gradients: #{$blue};
+
+  --premium-tier-2-purple-for-gradients: #{darken($mauve, math.div(20%, 2))};
+  --premium-tier-2-purple-for-gradients-2: #{$mauve};
+  --premium-tier-2-pink-for-gradients: #{$pink};
+
+  --control-primary-background-default: #{$pink};
+  --control-primary-background-hover: #{darken($pink, math.div(15%, 2))};
+  --control-primary-background-active: #{darken($pink, math.div(25%, 2))};
+
+  --control-secondary-background-default: #{$surface1} !important;
+  --control-secondary-background-hover: #{darken($surface1, math.div(10%, 2))};
+  --control-secondary-background-active: #{darken($surface1, math.div(15%, 2))};
+  --control-secondary-border-default: #{$surface0};
+  --control-secondary-text-default: #{$text} !important;
+  --control-secondary-text-hover: #{$text};
+
+  --control-critical-primary-background-default: #{$red};
+  --control-critical-primary-background-hover: #{darken($red, math.div(10%, 2))};
+  --control-critical-primary-background-active: #{darken(
+      $red,
+      math.div(20%, 2)
+    )};
+  --control-critical-primary-text-default: #{$base};
+  --control-critical-primary-text-hover: #{$base};
+
+  --control-critical-secondary-background-default: transparent;
+  --control-critical-secondary-background-hover: #{darken(
+      $red,
+      math.div(5%, 2)
+    )};
+  --control-critical-secondary-background-active: #{darken(
+      $red,
+      math.div(10%, 2)
+    )};
+  --control-critical-secondary-border-default: #{$red};
+  --control-critical-secondary-border-hover: #{darken($red, math.div(5%, 2))};
+  --control-critical-secondary-border-active: #{darken($red, math.div(5%, 2))};
+  --control-critical-secondary-text-default: #{$text};
+  --control-critical-secondary-text-hover: #{$base};
+  --control-critical-secondary-text-active: #{$base};
+
+  --control-connected-background-default: #{$green};
+  --control-connected-background-hover: #{darken($green, math.div(10%, 2))};
+  --control-connected-background-active: #{darken($green, math.div(15%, 2))};
+  --control-connected-border-default: #{$green};
+  --control-connected-border-hover: #{darken($green, math.div(5%, 2))};
+  --control-connected-border-active: #{darken($green, math.div(5%, 2))};
+
+  // discord still uses the button-outline naming for some variables for some reason?
+  --button-outline-primary-text: #{$text};
+
+  --button-outline-brand-text: #{$text};
+  --button-outline-brand-background-hover: #{darken($pink, math.div(5%, 2))};
+  --button-outline-brand-border-active: #{darken($pink, math.div(5%, 2))};
+
+  --modal-background: #{$base} !important;
+  --modal-footer-background: #{$base};
+
+  --scrollbar-thin-thumb: #{$pink};
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: #{$pink};
+  --scrollbar-auto-track: #{$crust};
+
+  --scrollbar-auto-scrollbar-color-thumb: #{$pink};
+  --scrollbar-auto-scrollbar-color-track: #{$crust};
+
+  --input-background-default: #{$crust};
+  --input-text-default: #{$text};
+  --input-placeholder-text-default: #{$subtext1};
+  --input-border-default: #{$overlay0};
+
+  --logo-primary: #{$text};
+
+  --control-brand-foreground: #{$pink};
+  --control-brand-foreground-new: #{$pink};
+  --mention-foreground: #{$pink};
+  --mention-background: #{adjust-color($pink, $alpha: -0.7)};
+
+  --message-mentioned-background-default: #{adjust-color($yellow, $alpha: -0.9)};
+  --message-mentioned-background-hover: #{adjust-color($yellow, $alpha: -0.92)};
+  --message-background-hover: #{adjust-color($crust, $alpha: -0.7)} !important;
+  --message-automod-background-default: #{adjust-color(
+      $rosewater,
+      $alpha: -0.95
+    )};
+  --message-automod-background-hover: #{adjust-color($rosewater, $alpha: -0.9)};
+  --message-highlight-background-default: #{adjust-color($pink, $alpha: -0.92)};
+  --message-highlight-background-hover: #{adjust-color($pink, $alpha: -0.94)};
+
+  --background-code: #{$base};
+  // --background-code-addition: #{adjust-color($green, $alpha: -0.85)};; hljs compiles in selectors for these.
+  // --background-code-deletion: #{adjust-color($red, $alpha: -0.85)};;
+
+  --channels-default: #{darken($subtext0, 5%)} !important;
+  --channel-icon: #{darken($subtext0, 5%)} !important;
+  --channel-text-area-placeholder: #{adjust-color($text, $alpha: -0.5)};
+  --channeltextarea-background: #{$mantle};
+
+  --icon-muted: #{darken($subtext0, 5%)} !important;
+  --icon-voice-muted: #{$red};
+  --icon-default: #{$text};
+  --icon-strong: #{$text};
+  --icon-subtle: #{$subtext1};
+
+  --textbox-markdown-syntax: #{$overlay0};
+
+  --spoiler-revealed-background: #{$surface0};
+  --spoiler-hidden-background: #{$surface2};
+
+  --__adaptive-focus-ring-color: #{$pink};
+
+  --interactive-icon-default: #{$text} !important;
+  --interactive-icon-hover: #{$text};
+  --interactive-icon-active: #{$text};
+  --interactive-text-default: #{$text} !important;
+  --interactive-text-hover: #{$text};
+  --interactive-text-active: #{$text};
+  --interactive-muted: #{$overlay0};
+
+  --interactive-background-hover: #{adjust-color($overlay2, $alpha: -0.85)};
+  --interactive-background-selected: #{adjust-color($overlay0, $alpha: -0.8)};
+  --interactive-background-active: #{adjust-color($text, $alpha: -0.83)};
+
+  --__spoiler-background-color--hidden: #{$surface2};
+  --__spoiler-warning-background-color: #{lighten($surface2, 5%)};
+
+  --user-profile-overlay-background: #{$mantle};
+  --user-profile-overlay-background-hover: #{$surface0};
+
+  --plum-23: #{$base};
+
+  --badge-text-brand: #{$base};
+
+  --text-status-online: #{$green};
+  --text-status-idle: #{$yellow};
+  --text-status-dnd: #{$red};
+  --text-status-offline: #{$subtext1};
+
+  --icon-status-online: #{$green};
+  --icon-status-idle: #{$yellow};
+  --icon-status-dnd: #{$red};
+  --icon-status-offline: #{$subtext1};
+
+  --twitch: #{darken($mauve, 10%)};
+  --playstation: #{darken($blue, 10%)};
+  --spotify: #{$green};
+
+  --notice-background-critical: #{$red};
+  --notice-background-info: #{$blue};
+  --notice-background-positive: #{$green};
+  --notice-background-warning: #{$yellow};
+  --notice-text-critical: #{$crust};
+  --notice-text-info: #{$crust};
+  --notice-text-positive: #{$crust};
+  --notice-text-warning: #{$crust};
+}
+
+::selection {
+  background-color: #{rgba($pink, 0.6)};
+}

@@ -1,0 +1,85 @@
+@use "sass:color";
+@use "sass:map";
+@use "soap";
+
+$highlights: (
+  "keyword": "mauve",
+  "built_in": "red",
+  "type": "yellow",
+  "literal": "peach",
+  "number": "peach",
+  "operator": "sky",
+  "punctuation": "subtext1",
+  "property": "teal",
+  "regexp": "pink",
+  "string": "green",
+  "char.escape_": "green",
+  "subst": "subtext0",
+  "symbol": "flamingo",
+  "variable": "mauve",
+  "variable.language_": "mauve",
+  "variable.constant_": "peach",
+  "title": "blue",
+  "title.class_": "yellow",
+  "title.function_": "blue",
+  "params": "text",
+  "comment": "overlay2",
+  "doctag": "red",
+  "meta": "peach",
+  "section": "blue",
+  "tag": "teal",
+  "name": "mauve",
+  "attr": "blue",
+  "attribute": "green",
+  "bullet": "teal",
+  "code": "green",
+  "emphasis": "red",
+  "strong": "red",
+  "formula": "teal",
+  "link": "sapphire",
+  "quote": "green",
+  "selector-tag": "yellow",
+  "selector-id": "blue",
+  "selector-class": "teal",
+  "selector-attr": "mauve",
+  "selector-pseudo": "teal",
+  "template-tag": "flamingo",
+  "template-variable": "flamingo",
+  "addition": "green",
+  "deletion": "red",
+);
+
+$fontStyles: (
+  "emphasis": "italic",
+  "strong": "bold",
+  "link": "italic",
+  "quote": "italic",
+);
+
+@mixin highlights() {
+
+  &.hljs {
+    color: map.get(soap.$soap, "text");
+    background: map.get(soap.$soap, "base");
+  }
+
+  @each $key, $value in $highlights {
+    .hljs-#{$key} {
+      color: map.get(soap.$soap, $value);
+
+      @if map.has-key($fontStyles, $key) {
+        @if map.get($fontStyles, $key)=="bold" {
+          font-weight: bold;
+        }
+
+        @else if map.get($fontStyles, $key)=="italic" {
+          font-style: italic;
+        }
+      }
+
+      @if ($key =="addition" or $key =="deletion") {
+        background: color.change(map.get(soap.$soap, $value), $alpha: 0.15);
+      }
+    }
+  }
+}

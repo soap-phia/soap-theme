@@ -1,0 +1,16 @@
+{
+  "name": "soap-theme-discord",
+  "displayName": "soap theme",
+  "description": "soap theme, but for discord",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soap-theme/soap-theme.git"
+  },
+  "version": "1.0.0",
+  "scripts": {
+    "pack": "bun run ./build.ts"
+  },
+  "dependencies": {
+    "sass": "^1.99.0"
+  }
+}

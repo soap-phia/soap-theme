@@ -1,0 +1,73 @@
+// rainbow threads
+
+// User can place this in their QuickCSS/Custom CSS to disable rainbow threads (willow is soooo boring)
+// :root {
+//   --ctp-rainbow-thread-disabled: ;
+// }
+& {
+  --thread-default: var(--ctp-rainbow-thread-disabled) var(--channels-default);
+  --thread-core: var(--ctp-rainbow-thread-disabled) var(--text-default);
+  --thread-spine: var(--ctp-rainbow-thread-disabled) var(--spine-default);
+  --thread-muted: var(--ctp-rainbow-thread-disabled) var(--text-muted);
+}
+
+@mixin rainbow-vars($colour) {
+  --channels-default: var(--thread-default, #{fade-out($colour, 0.3)});
+  --interactive-text-hover: var(--thread-default, #{$colour});
+  --interactive-text-active: var(--thread-default, #{$colour});
+  --text-strong: var(--thread-default, #{$colour});
+  --text-default: var(--thread-core, #{$colour});
+  --text-muted: var(--thread-muted, #{mix($colour, $crust, 50%)});
+  --spine-default: var(--thread-spine, #{mix($colour, $crust, 50%)});
+}
+
+@mixin rainbow-thread($n, $colour) {
+  & > li:nth-of-type(6n + #{$n}) {
+    @include rainbow-vars($colour);
+  }
+}
+
+@function rainbow-gradient($colours) {
+  $output: ();
+
+  @for $i from 0 to length($colours) {
+    $mixed: mix(nth($colours, $i + 1), $crust, 50%);
+    $start: calc(var(--step) * #{$i});
+    $end: calc(var(--step) * #{$i + 1});
+
+    $output: append($output, "#{$mixed} #{$start}, #{$mixed} #{$end}", comma);
+  }
+
+  @return $output;
+}
+
+ul[class^="content_"] > li[class^="container_"] > ul[role="group"] {
+  & > div[class^="spineBorder_"] {
+    // Account for UI Density setting
+    // 30px is the size of each spline section
+    // density padding is either 20px, 24px or 28px. get the padding px count
+    // --step: calc(var(--channels-name-line-height) - 20px + 30px);
+    --step: calc(var(--channels-name-line-height) + 10px);
+
+    // Repeating gradient on core spine element to not have unsightly gaps between the splines of mixin(rainbow-thread)
+    // `to bottom` default
+    background: var(
+      --thread-spine,
+      repeating-linear-gradient(
+        #{rainbow-gradient(($red, $peach, $yellow, $green, $blue, $mauve))}
+      )
+    );
+  }
+
+  @include rainbow-thread(1, $red);
+  @include rainbow-thread(2, $peach);
+  @include rainbow-thread(3, $yellow);
+  @include rainbow-thread(4, $green);
+  @include rainbow-thread(5, $blue);
+  @include rainbow-thread(6, $mauve);
+
+  // A singular thread is brand coloured
+  & li:only-of-type {
+    @include rainbow-vars($pink);
+  }
+}
