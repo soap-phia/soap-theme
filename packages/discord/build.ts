@@ -34,7 +34,9 @@ function compile(srcDir: string, outDir: string): void {
 }
 
 const build = async (): Promise<void> => {
-    fs.rmSync("./dist", { recursive: true });
+    if (fs.existsSync("./dist")) {
+        fs.rmSync("./dist", { recursive: true });
+    }
     fs.cpSync("./src", "./dist", { recursive: true });
 
     let file = fs.readFileSync("./dist/_template.scss", "utf8");
