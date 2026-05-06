@@ -9,7 +9,8 @@
     "pack:discord": "mkdir -p dist ; cd packages/discord ; bun run pack ; cp *.css ../../dist",
     "pack:vscode": "mkdir -p dist ; cd packages/vscode ; bun run pack ; cp *.vsix ../../dist",
     "pack:chrome": "mkdir -p dist ; cd packages/chrome ; bun run pack ; cp *.zip ../../dist",
-    "pack": "bun run pack:discord && bun run pack:vscode && bun run pack:chrome"
+    "pack:userstyles": "mkdir -p dist ; cd packages/userstyles ; bun run pack ; cp soap-theme-userstyles.json ../../dist",
+    "pack": "bun run pack:discord && bun run pack:vscode && bun run pack:chrome && bun run pack:userstyles"
   },
   "devDependencies": {
     "@types/bun": "latest"
