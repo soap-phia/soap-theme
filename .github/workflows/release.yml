@@ -27,6 +27,7 @@ jobs:
 
             - name: Package Files
               run: |
+                  bun install
                   bun run pack
 
             - name: Create Release
